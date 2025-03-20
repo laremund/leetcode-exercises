@@ -136,7 +136,7 @@ Refresher on JS, I'm using it as a warmup for the day by thinking through logic 
 
 ```
 
-## Day 3 - To Be Or Not To Be
+## Day 3 - 3/20 - To Be Or Not To Be
 ```javascript
 const expect = function(val) {
   return {
@@ -152,7 +152,7 @@ const expect = function(val) {
 };
 ```
 
-## Day 2 - Counter
+## Day 2 - 3/19 - Counter
 ```javascript
 const createCounter = function(n) {
     let count = n;
@@ -160,7 +160,7 @@ const createCounter = function(n) {
 };
 ```
 
-## Day 1 - Create Hello World Function
+## Day 1 - 3/18 - Create Hello World Function
 ```javascript
 const createHelloWorld = function() {
     
