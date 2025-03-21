@@ -1,6 +1,18 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
+## Day 4 - 3/21 - Counter II
+```javascript
+const createCounter = function(init) {
+    let original = init;
+    return {
+        increment: () => ++init,
+        decrement: () => --init,
+        reset: () => init = original
+    };
+};
+```
+
 ## Day 3 - 3/20 - To Be Or Not To Be
 ```javascript
 const expect = function(val) {
