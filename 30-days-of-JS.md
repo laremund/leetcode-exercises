@@ -1,6 +1,17 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
+## Day 5 - 03/22 - Apply Transform Over Each Element in Array
+```javascript
+const map = function(arr, fn) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(fn(arr[i], i));
+    }
+    return newArr;
+};
+```
+
 ## Day 4 - 3/21 - Counter II
 ```javascript
 const createCounter = function(init) {
