@@ -1,6 +1,17 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
+## Day 6 - 03/23 - Filter Elements from Array
+```javascript
+const filter = function(arr, fn) {
+    const filteredArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (fn(arr[i], i)) filteredArr.push(arr[i]);
+    }
+    return filteredArr;
+};
+```
+
 ## Day 5 - 03/22 - Apply Transform Over Each Element in Array
 ```javascript
 const map = function(arr, fn) {
