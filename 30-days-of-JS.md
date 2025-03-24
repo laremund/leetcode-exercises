@@ -1,6 +1,17 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
+## Day 7 - 03/24 - Array Reduce Transformation
+```javascript
+const reduce = function(nums, fn, init) {
+    let val = init;
+    for (let num of nums) {
+        val = fn(val, num);
+    }
+    return val;
+};
+```
+
 ## Day 6 - 03/23 - Filter Elements from Array
 ```javascript
 const filter = function(arr, fn) {
