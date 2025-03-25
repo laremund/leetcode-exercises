@@ -1,6 +1,19 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
+## Day 8
+```javascript
+const compose = function(functions) {
+
+    return function(x) {
+        for (let i = functions.length - 1; i >= 0; i--) {
+            x = functions[i](x);
+        }
+        return x;
+    }
+};
+```
+
 ## Day 7 - 03/24 - Array Reduce Transformation
 ```javascript
 const reduce = function(nums, fn, init) {
