@@ -1,7 +1,7 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
-## Day 8
+## Day 8 - 03/25 - Function Composition
 ```javascript
 const compose = function(functions) {
 
