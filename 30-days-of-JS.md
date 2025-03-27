@@ -1,6 +1,20 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
+## Day 10 - 03/37 - Allow One Function Call
+```javascript
+const once = function(fn) {
+    let callCount = 0;
+
+    return function(...args){
+        callCount++;
+        if (callCount == 1) {
+            return fn(...args);
+        }
+    }
+};
+```
+
 ## Day 9 - 03/26 - Return Length of Arguments Passed
 ```javascript
 const argumentsLength = function(...args) {
