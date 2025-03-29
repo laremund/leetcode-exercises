@@ -1,6 +1,23 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
+## Day 11 - 03/28 - Memoize
+This one was a not-so-gentle reminder of how spread syntax works, apparently I've forgotten, so I failed a random test case a bunch of times until I figured out that was the issue.
+```javascript
+function memoize(fn) {
+    const cache = {};
+    return function(...args) {
+        const argKey = String(args);
+        if (argKey in cache) {
+            return cache[argKey];
+        }
+        const result = fn(...args);
+        cache[argKey] = result;
+        return result;
+    }
+}
+```
+
 ## Day 10 - 03/37 - Allow One Function Call
 ```javascript
 const once = function(fn) {
