@@ -1,6 +1,19 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
+## Day 13 - 04/03 - Sleep
+### Description:
+Given a positive integer millis, write an asynchronous function that sleeps for millis milliseconds. It can resolve any value.
+### Solution:
+```javascript
+async function sleep(millis) {
+    const sleepPromise = new Promise((resolve) => {
+            setTimeout(() => resolve(), millis)
+        })
+    await sleepPromise;
+}
+```
+
 ## Day 12 - 04/02 - Add Two Functions
 ### Description:
 Given two promises promise1 and promise2, return a new promise. promise1 and promise2 will both resolve with a number. The returned promise should resolve with the sum of the two numbers.
