@@ -1,6 +1,41 @@
 # 30 Days of JavaScript
 Refresher on JS, I'm using it as a warmup for the day by thinking through logic problems.
 
+## Day 15 - 04/05 - Interval Cancellation
+### Description:
+Given a function fn, an array of arguments args, and an interval time t, return a cancel function cancelFn.
+
+After a delay of cancelTimeMs, the returned cancel function cancelFn will be invoked.
+
+> setTimeout(cancelFn, cancelTimeMs)
+
+The function fn should be called with args immediately and then called again every t milliseconds until cancelFn is called at cancelTimeMs ms.
+### Solution:
+```javascript
+const cancellable = function(fn, args, t) {
+    let cancelled = false;
+    const cancelFn = () => cancelled = true;
+    const checkCancelled = () => {
+        if (!cancelled) { 
+            fn(...args);
+            setTimeout(checkCancelled, t);
+        }
+        return;
+    }
+    checkCancelled();
+    return cancelFn;
+};
+```
+> ^ That was my initial submission using recursion (which was 9ms faster), below is my submission using setInterval
+```javascript
+const cancellable = function(fn, args, t) {
+    fn(...args);
+    const interval = setInterval(() => fn(...args), t);
+    const cancelFn = () => clearInterval(interval);
+    return cancelFn;
+};
+```
+
 ## Day 14 - 04/04 - Timeout Cancellation
 ### Description:
 Given a function fn, an array of arguments args, and a timeout t in milliseconds, return a cancel function cancelFn.
