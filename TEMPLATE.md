@@ -1,6 +1,6 @@
 # Layout for remainder of 30 days
 
-## Day 16 -  - Promise Time Limit
+## Day 17 - Cache With Time Limit
 ### Description:
 
 ### Solution:
@@ -8,7 +8,7 @@
 
 ```
 
-## Day 17 -  - Cache With Time Limit
+## Day 18 - Debounce
 ### Description:
 
 ### Solution:
@@ -16,7 +16,7 @@
 
 ```
 
-## Day 18 -  - Debounce
+## Day 19 - Execute Asynchronous Functions in Parallel
 ### Description:
 
 ### Solution:
@@ -24,7 +24,7 @@
 
 ```
 
-## Day 19 -  - Execute Asynchronous Functions in Parallel
+## Day 20 - Is Object Empty
 ### Description:
 
 ### Solution:
@@ -32,7 +32,7 @@
 
 ```
 
-## Day 20 -  - Is Object Empty
+## Day 21 - Chunk Array
 ### Description:
 
 ### Solution:
@@ -40,7 +40,7 @@
 
 ```
 
-## Day 21 -  - Chunk Array
+## Day 22 - Array Prototype Last
 ### Description:
 
 ### Solution:
@@ -48,7 +48,7 @@
 
 ```
 
-## Day 22 -  - Array Prototype Last
+## Day 23 - Group By
 ### Description:
 
 ### Solution:
@@ -56,7 +56,7 @@
 
 ```
 
-## Day 23 -  - Group By
+## Day 24 - Sort By
 ### Description:
 
 ### Solution:
@@ -64,7 +64,7 @@
 
 ```
 
-## Day 24 -  - Sort By
+## Day 25 - Join Two Arrays by ID
 ### Description:
 
 ### Solution:
@@ -72,7 +72,7 @@
 
 ```
 
-## Day 25 -  - Join Two Arrays by ID
+## Day 26 - Flatten Deeply Nested Array
 ### Description:
 
 ### Solution:
@@ -80,7 +80,7 @@
 
 ```
 
-## Day 26 -  - Flatten Deeply Nested Array
+## Day 27 - Compact Object
 ### Description:
 
 ### Solution:
@@ -88,7 +88,7 @@
 
 ```
 
-## Day 27 -  - Compact Object
+## Day 28 - Event Emitter
 ### Description:
 
 ### Solution:
@@ -96,7 +96,7 @@
 
 ```
 
-## Day 28 -  - Event Emitter
+## Day 29 - Array Wrapper
 ### Description:
 
 ### Solution:
@@ -104,15 +104,7 @@
 
 ```
 
-## Day 29 -  - Array Wrapper
-### Description:
-
-### Solution:
-```javascript
-
-```
-
-## Day 30 -  - Calculator with Method Chaining
+## Day 30 - Calculator with Method Chaining
 ### Description:
 
 ### Solution:
